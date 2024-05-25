@@ -31,15 +31,15 @@ body {
 	font-weight: 400;
 	letter-spacing: 0.5px;
 	font-size: 18px;
+	overflow-x: hidden;
 }
 *:focus {
 	outline: 2px dotted #ff7500;
 	outline-offset: 3px;
 }
-/* CONTAINER */
 .container {
 	width: 100%;
-	max-width: 1380px;
+	max-width: 1440px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: auto;
@@ -152,8 +152,7 @@ a {
 	opacity: 0.6;
 }
 
-/* HERO */
-.hero {
+HERO .hero {
 	padding-top: 40px;
 }
 
@@ -195,7 +194,7 @@ a {
 	height: 160px;
 }
 
-/* OUR COLLECTION */
+/* OUR COLLECTION  */
 .our-collection {
 	margin-bottom: 20px;
 }
@@ -243,50 +242,44 @@ a {
 	margin: 0;
 	padding: 0;
 }
-
 .our-collection__item {
 	display: flex;
 	align-content: center;
 }
-
 .our-collection__item:not(:last-child) {
 	margin-bottom: 20px;
 }
-
 .our-collection__item:nth-child(2n - 1) {
 	flex-direction: row-reverse;
 }
-
 .our-collection__img {
 	width: 450px;
 	height: 375px;
 	object-fit: cover;
 	margin-right: 177px;
 }
-
 .our-collection__img2 {
 	margin-right: 0;
 	margin-left: 177px;
 }
-
 .our-collection__item-info {
 	max-width: 410px;
 }
-
 .our-collection__item-info__title {
 	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 48px;
 	line-height: 1.2;
 }
-
 .our-collection__item-info__text {
 	font-size: 22px;
 	line-height: 1.5;
 	font-weight: 400;
 }
-
 /* index-collaction */
+.index-collaction {
+	margin-bottom: 459px;
+}
 .index-collaction__inner {
 	background-color: var(--darkgold-bg);
 	background-image: url(../img/Group\ 3616.png);
@@ -294,8 +287,9 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 50px;
+	padding-bottom: 289px;
+	position: relative;
 }
-
 .index-collaction__info {
 	display: flex;
 	align-items: center;
@@ -307,38 +301,160 @@ a {
 	width: 100%;
 	text-align: center;
 	color: var(--white-color);
-	margin-bottom: 80px;
 }
-
 .index-collaction__list {
+	position: absolute;
 	display: flex;
 	padding: 0;
+	margin-left: -20px;
 }
-
 .index-collaction__item:nth-child(1) {
 	position: relative;
 }
-
 .index-collaction__item-logo {
 	position: absolute;
 	left: -64px;
 	top: -68px;
 }
-
-.index-collaction__item:not(:last-child) {
-	margin-right: 20px;
+.index-collaction__item {
+	min-width: 433px;
+	width: 100%;
 }
-
 .index-collaction__img {
 	width: 433px;
 	height: 500px;
 	object-fit: cover;
 	margin-bottom: 28px;
 }
-
 .index-collaction__item-title {
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 1.2;
 	margin-bottom: 10px;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works__inner {
+	position: relative;
+	background-image: url(../img/Howitsworkgreenbg.png);
+	padding: 50px 30px;
+}
+
+.how-it-works__img {
+	position: absolute;
+	right: 68px;
+	top: 41px;
+}
+
+.how-it-works__title {
+	text-align: center;
+	font-weight: 700;
+	color: var(--white-color);
+	font-size: 50px;
+	line-height: 1.2;
+	margin-bottom: 80px;
+}
+
+.how-it-works__kvadrat {
+	max-width: 966px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../img/Vector\ 5.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 20px;
+}
+
+.how-it-works__kvadrat-inner {
+	width: 60px;
+	height: 60px;
+	background-color: var(--white-color);
+	border: 4px solid var(--darkgold-bg);
+}
+
+.how-it-works__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.how-it-works__item {
+	max-width: 433px;
+	width: 100%;
+	background-color: var(--white-color);
+	padding: 20px 20px 40px;
+	color: var(--text-color);
+}
+
+.how-it-works__item:not(:last-child) {
+	margin-right: 20px;
+}
+
+.how-it-works__item-number {
+	font-weight: 400;
+	font-size: 60px;
+	text-align: right;
+	line-height: 1.2;
+	margin-bottom: 45px;
+}
+
+.how-it-works__item-info {
+	max-width: 385px;
+	width: 100%;
+}
+
+.how-it-works__item-title {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.how-it-works__btn-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.how-it-works__btn {
+	background-color: var(--darkgold-bg);
+}
+
+.how-it-works__btn:focus {
+	outline: 2px dotted var(--darkgold-bg);
+	outline-offset: 3px;
+}
+
+.site-footer {
+	padding-top: 65px;
+	padding-bottom: 65px;
+	background-color: var(--gold-bg);
+}
+
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.social__link {
+	display: flex;
+	align-items: center;
+}
+
+.social__link svg {
+	color: var(--text-color);
+}
+
+.social__link svg:hover {
+	color: var(--green-bg);
 }
